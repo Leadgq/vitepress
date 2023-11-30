@@ -14,6 +14,7 @@ export default defineConfig({
         activeMatch: "/guide/tree/tree",
       },
       { text: "基础方法", link: "/guide/base/base" },
+      { text: "数学方法", link: "/guide/math/math" },
     ],
     search: {
       provider: "local",
