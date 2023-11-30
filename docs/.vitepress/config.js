@@ -15,6 +15,7 @@ export default defineConfig({
       },
       { text: "基础方法", link: "/guide/base/base" },
       { text: "数学方法", link: "/guide/math/math" },
+      { text: "工具方法", link: "/guide/tools/tools" },
     ],
     search: {
       provider: "local",
