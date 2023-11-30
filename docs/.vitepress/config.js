@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  base: "/vitepress/",
+  base: "/tree-lib-doc/",
   title: "在线文档库",
   themeConfig: {
     socialLinks: [
