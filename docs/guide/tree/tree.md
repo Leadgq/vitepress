@@ -1,6 +1,6 @@
-# 所有方法列举
+# 树所有方法列举
 
-## flattenTree => 展开树
+##  广度优先展开树
 ```js
 /** 
  * @param { Array | Object } tree  树数组或者树对象
@@ -12,7 +12,7 @@
 flattenTree(arr)
 ```
 
-##  flattenTreeByDepth => 展开树
+##  深度优先展开树
 ```js
 /** 
  * @param {Array | Object} tree  树数组或者树对象
@@ -22,7 +22,7 @@ flattenTree(arr)
 flattenTreeByDepth(arr)
 ```
 
-## flattenTreeByPostOrder => 展开树
+##  后序深度展开树
 ```js
 /** 
  * @param {Array | Object} tree  树数组或者树对象
@@ -32,7 +32,7 @@ flattenTreeByDepth(arr)
 flattenTreeByPostOrder(arr)
 ```
 
-## reduceFlattenTree => 展开树
+##  递归展开树
 ```js
 /**
  * @param { Array } tree
@@ -43,7 +43,7 @@ flattenTreeByPostOrder(arr)
 reduceFlattenTree(arr)
 ```
 
-## findTreeByFlatArray => 树查找
+## 树查找（扁平树查找）
 ```js
 /**
  * @param {Array} flatTreeData 压平的树
@@ -56,19 +56,7 @@ reduceFlattenTree(arr)
 findTreeByFlatArray(flatTreeData, key, value);
 ```
 
-## findParent => 查找父节点
-```js
-/**
- * @param {Array} tree 树数组
- * @param {String} parentId  当前节点的父节点id、这个节点parentId应来来自于点击时候的parentId
- * @param showDetail 是否返回当前节点的详细信息
- * @returns {Array} 路径
- * @description 默认情况下记录当前节点的路径id集合 、showDetail为true时候返回当前节点的详细信息
- */
-findParent(tree, parentId,showDetail);
-```
-
-## findTreeByTreeData => 树查找
+## 树查找（主键）
 ```js
 /**
  * @param {Array} tree  树数组(正常树)
@@ -82,7 +70,7 @@ findTreeByTreeData(tree, key, value);
 ```
 
 
-## findTreeByFn => 树查找（函数）
+## 树查找（函数）
 ```js
 /**
  * @param {Array} tree  树数组(正常树)
@@ -94,7 +82,23 @@ findTreeByTreeData(tree, key, value);
 findTreeByFn(tree,callback);
 ```
 
-## findChildrenListByFn => 查找子节点（函数）
+
+
+## 查找当前节点的父节点
+```js
+/**
+ * @param {Array} tree 树数组
+ * @param {String} parentId  当前节点的父节点id、这个节点parentId应来来自于点击时候的parentId
+ * @param showDetail 是否返回当前节点的详细信息
+ * @returns {Array} 路径
+ * @description 默认情况下记录当前节点的路径id集合 、showDetail为true时候返回当前节点的详细信息
+ */
+findParent(tree, parentId,showDetail);
+```
+
+
+
+## 查找子节点（函数）
 ```js
 /**
  * @param {Array} tree 树数组(正常树)
@@ -107,7 +111,7 @@ findChildrenListByFn(tree, callback)
 ```
 
 
-## findChildrenList => 查找子节点
+## 查找子节点
 ```js
 /**
  * @param {Array} tree 树数组(正常树) 
@@ -122,7 +126,7 @@ findChildrenList(tree, key,value ,showDetail = true)
 ```
 
 
-## findPath => 查找路径
+## 查找路径
 ```js
 /**
  * @param {Array} treeArray 树数组(正常树)
@@ -138,7 +142,7 @@ findChildrenList(tree, key,value ,showDetail = true)
 findPath(treeArray, target, key, showDetail)
 ```
 
-## isParentNode => 是否是父节点
+## 是否是父节点
 ```js
 /**
  * 
@@ -149,7 +153,7 @@ findPath(treeArray, target, key, showDetail)
 isParentNode(node)
 ```
 
-## isChildNode => 是否是子节点
+##  是否是子节点
 ```js
 /** 
  * @param {Array | Object}  treeData
@@ -161,7 +165,7 @@ isParentNode(node)
 isChildNode (treeData,node,key)
 ```
  
-## redoTreeData => 重做树结构
+##  重做树结构
 ```js
 /**
  * @param { Array | Object }  tree
@@ -171,7 +175,7 @@ isChildNode (treeData,node,key)
 redoTreeData (treeData,handlerTreeFn)
 ```
 
-## isLeafNode => 是否是叶子节点
+##  是否是叶子节点
 ```js
 /**
  * @param { Array | Object }  treeData
@@ -182,7 +186,7 @@ redoTreeData (treeData,handlerTreeFn)
 isLeafNode (treeData,node,key)
 ```
 
-## findCurrentNodeBrotherNode => 查找当前节点的兄弟节点
+##  查找当前节点的兄弟节点
 ```js
 /**
  * @param { Array | Object }  treeData

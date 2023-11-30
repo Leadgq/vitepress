@@ -15,7 +15,9 @@ export default defineConfig({
       },
       { text: "基础方法", link: "/guide/base/base" },
     ],
-    sidebar: [],
+    search: {
+      provider: "local",
+    },
     footer: {
       message: "配套方法记录",
       copyright: "方法更新文档也会更新",
