@@ -151,3 +151,15 @@ getMapSize(map);
  */
 getSetSize(set);
 ```
+
+## 对象是否包含某个键
+
+```js
+/**
+ * @param {Object} obj
+ * @param {String} key
+ * @description 对象是否包含某个键
+ * @example objIsContainsKey({a:1},'a') => true
+ */
+objIsContainsKey(obj,key)
+```

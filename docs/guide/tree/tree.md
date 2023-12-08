@@ -164,7 +164,7 @@ isParentNode(node);
 ```js
 /**
  * @param {Array | Object}  treeData
- * @param {Object} node
+ * @param {Object | string } node 值或者节点对象
  * @param { String } key
  * @returns {Boolean}
  * @description 返回当前节点在树中是否是子节点
@@ -200,7 +200,7 @@ isLeafNode(treeData, node, key);
 ```js
 /**
  * @param { Array | Object }  treeData
- * @param  { Object  } node
+ * @param  { Object | string } node 值或者节点对象
  * @param  { String  } key
  * @param  { Boolean  } isShowDetail 默认true 返回当前节点的详细信息
  * @description  返回当前节点的兄弟节点
