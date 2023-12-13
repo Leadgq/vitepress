@@ -152,6 +152,18 @@ getMapSize(map);
 getSetSize(set);
 ```
 
+##  是否标记async
+    
+```js
+/**
+ * @param {fn} function
+ * @description 是否标记async
+ * @example isAsync(async function(){}) => true
+ */
+isAsync(set);
+```
+    
+
 ## 对象是否包含某个键
 
 ```js
@@ -162,4 +174,14 @@ getSetSize(set);
  * @example objIsContainsKey({a:1},'a') => true
  */
 objIsContainsKey(obj,key)
+```
+
+## 数据类型
+
+```js
+/**
+* @param {any} data
+* @description 数据类型
+ */
+typeofData(data)
 ```

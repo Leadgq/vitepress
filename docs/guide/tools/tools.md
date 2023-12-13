@@ -140,3 +140,43 @@ futureTimestamp(time, type = 'second');
  */
 differenceTimestamp(time, type = 'second');
 ```
+
+## 标签页之间通信
+
+```js
+/**
+ * @description 不同标签页之间通信
+ * @returns { Object  } sendMessage: Function, receiveMessage: Function
+ * @example const { sendMessage, receiveMessage } = initBroadcastChannel('userInformation');
+ * @example sendMessage('userInformation', { name: '张三' });
+ * @example receiveMessage((data) => console.log(data));
+ */
+initBroadcastChannel(messageInfo)
+```
+
+## 数组去重
+
+```js
+/**
+ * @description 数组去重
+ * @description 去除对象数组中的重复项
+ * @description 如果不传入key，则认为是基本类型数组
+ * @returns { Array }
+ * @param { Array } arr
+ * @param { string } key
+*/
+uniqueArray(arr,key)
+```
+
+## 模糊搜索对象数组
+
+```js
+/**
+ * @description 模糊搜索对象数组
+ * @returns { Array }
+ * @param { string } keyWord 
+ * @param { attribute } key
+ * @description 如果不传入key，则认为是基本类型数组
+*/
+fuzzySearch(arr, keyWord, attribute)
+```
