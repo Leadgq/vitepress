@@ -160,7 +160,7 @@ getSetSize(set);
  * @description 是否标记async
  * @example isAsync(async function(){}) => true
  */
-isAsync(set);
+isAsync(fn);
 ```
     
 
