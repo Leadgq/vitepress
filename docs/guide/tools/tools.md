@@ -106,41 +106,6 @@ sleep(time)
 after(fn, count)
 ```
 
-## 当前时间戳
-
-```js
-/**
- * @returns { number }
- * @description 当前时间戳
- */
-nowTimeStamp();
-```
-
-## 未来时间戳
-
-```js
-/**
- *  @description  未来时间戳
- *  @returns { number }
- *  @param { number } 
- *  @type { 'day' | 'hour' | 'minute' | 'second' }
- */
-futureTimestamp(time, type = 'second');
-```
-
-## 时间戳差值
-    
-```js
-/**
- * @description  返回当前时间戳和未来时间戳的差值
- * @description  需要传入未来时间戳
- * @returns { number }
- * @param { number }
- * @type { 'day' | 'hour' | 'minute' | 'second' }
- */
-differenceTimestamp(time, type = 'second');
-```
-
 ## 标签页之间通信
 
 ```js
