@@ -188,7 +188,7 @@ redoTreeData(treeData, handlerTreeFn);
 ```js
 /**
  * @param { Array | Object }  treeData
- * @param  { Object  } node
+ * @param  { Object | String  } node
  * @param  { String  } key
  * @description  返回当前节点是否是叶子节点,外界如果提供isLeaf字段、则直接返回isLeaf字段
  */
