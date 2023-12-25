@@ -207,3 +207,18 @@ isLeafNode(treeData, node, key);
  */
 findCurrentNodeBrotherNode(treeData, node, key);
 ```
+
+
+## 树的模糊搜索
+
+```js
+/**
+ * @param { Array | Object }  treeData
+ * @param  { String  } keyWord
+ * @param  { String  } key
+ * @example treeFuzzySearch(cityData, '街', 'label')
+ * @returns [[ '北京', '北京市', '东城区', '东城街道' ],[ '大连市', '甘井子区', '甘井子小城区', '甘井子街道' ]]
+    @description 将树中所有包含关键字的路径返回
+ */
+treeFuzzySearch(treeData, keyWord, key);
+```
