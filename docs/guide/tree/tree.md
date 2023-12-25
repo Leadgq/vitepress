@@ -188,7 +188,7 @@ redoTreeData(treeData, handlerTreeFn);
 ```js
 /**
  * @param { Array | Object }  treeData
- * @param  { Object  } node
+ * @param  { Object | String  } node
  * @param  { String  } key
  * @description  返回当前节点是否是叶子节点,外界如果提供isLeaf字段、则直接返回isLeaf字段
  */
@@ -206,4 +206,19 @@ isLeafNode(treeData, node, key);
  * @description  返回当前节点的兄弟节点
  */
 findCurrentNodeBrotherNode(treeData, node, key);
+```
+
+
+## 树的模糊搜索
+
+```js
+/**
+ * @param { Array | Object }  treeData
+ * @param  { String  } keyWord
+ * @param  { String  } key
+ * @example treeFuzzySearch(cityData, '街', 'label')
+ * @returns [[ '北京', '北京市', '东城区', '东城街道' ],[ '大连市', '甘井子区', '甘井子小城区', '甘井子街道' ]]
+    @description 将树中所有包含关键字的路径返回
+ */
+treeFuzzySearch(treeData, keyWord, key);
 ```

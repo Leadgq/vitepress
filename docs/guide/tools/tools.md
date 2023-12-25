@@ -140,8 +140,8 @@ uniqueArray(arr,key)
  * @description 模糊搜索对象数组
  * @returns { Array }
  * @param { string } keyWord 
- * @param { attribute } key
+ * @param { string } key
  * @description 如果不传入key，则认为是基本类型数组
 */
-fuzzySearch(arr, keyWord, attribute)
+fuzzySearch(arr, keyWord, key)
 ```
