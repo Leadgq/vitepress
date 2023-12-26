@@ -138,13 +138,13 @@ findChildrenList(tree, key, value, (showDetail = true));
  * @param {string | Object } node  节点的值或者节点对象
  * @param {string} key 你的唯一标识key
  * @param {boolean} showDetail 是否显示路径的详细信息
- * @param {boolean} isIncludeMyself 是否包含自身
+ * @param {boolean} isIncludeMyself 是否包含自身、默认false
  * @description  递归
  * @example findPath([{a:1,children:[{a:2,children:[{a:3}]}]}],3,'a') => [1,2]
  * @example findPath([{a:1,children:[{a:2,children:[{a:3}]}]}],3,'a',true) => [{a:1},{a:2}]
  * @returns {Array} 返回路径
  */
-findPath(treeArray, target, key, showDetail);
+findPath(tree, node, key, showDetail , isIncludeMyself = false);
 ```
 
 ## 是否是父节点
