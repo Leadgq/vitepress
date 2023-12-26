@@ -93,13 +93,15 @@ findTreeByFn(tree, callback);
 ```js
 /**
  * @description 调用者注意,依赖于当前节点的parentId字段,如果你的数据中没有,请使用findPath方法
+ * @description 内部寻找使用、数据id字段,你的数据中必须有id字段, 局限性比较大,如果能满足id和parentId字段可以使用
+ * @description 建议使用findPath方法，只需要节点和key即可
  * @param {Array} tree 树数组
- * @param {String} parentId  当前节点的父节点id、这个节点parentId应来来自于点击时候的parentId
+ * @param {String} parentId  当前节点的父节点id、这个节点parentId应来自于点击时候的parentId
  * @param showDetail 是否返回当前节点的详细信息
  * @returns {Array} 路径
  * @description 默认情况下记录当前节点的路径id集合 、showDetail为true时候返回当前节点的详细信息
  */
-findParent(tree, parentId, showDetail);
+findParent(tree, parentId, showDetail = false);
 ```
 
 ## 查找子节点（函数）
