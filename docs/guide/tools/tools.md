@@ -157,13 +157,3 @@ fuzzySearch(arr, keyWord, key)
  */
 getCurrentDateForChina(isTwelveHours)
 ```
-
-## 返回钱的格式
-
-```js
-/**
- * @description 返回钱的格式
- * @example getMoneyFormatForChina(123456.789) => ¥123,456.79
- */
-getMoneyFormatForChina(money)
-```
