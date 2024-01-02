@@ -145,3 +145,25 @@ uniqueArray(arr,key)
 */
 fuzzySearch(arr, keyWord, key)
 ```
+## 返回当前时间
+
+```js
+
+/**
+ * @description 方法是12小时制
+ * @description 返回当前时间
+ * @example getCurrentDateForChina() => 2021年1月1日星期五 下午4:00
+ * @example getCurrentDateForChina(false) => 2021年1月1日星期五 16:00
+ */
+getCurrentDateForChina(isTwelveHours)
+```
+
+## 返回钱的格式
+
+```js
+/**
+ * @description 返回钱的格式
+ * @example getMoneyFormatForChina(123456.789) => ¥123,456.79
+ */
+getMoneyFormatForChina(money)
+```
