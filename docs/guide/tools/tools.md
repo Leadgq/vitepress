@@ -157,3 +157,28 @@ fuzzySearch(arr, keyWord, key)
  */
 getCurrentDateForChina(isTwelveHours)
 ```
+
+## 拷贝
+
+```js
+/**
+ * @description 初始化一次 
+ * @description 内部会判断是否支持clipboard、不支持则使用document.execCommand
+ * @description 返回值为true表示拷贝成功
+ * @param { string } value 当前需要拷贝的内容
+ */
+ const ClipboardInstance = new Clipboard();
+ const res = await ClipboardInstance.copyTextByClipboard(value);
+```
+
+## 获取拷贝的内容
+
+```js
+/**
+ * @description 初始化一次 
+ * @description 内部会判断是否支持clipboard、不支持则使用document.execCommand
+ * @description 返回值为你拷贝的内容
+ */
+ const ClipboardInstance = new Clipboard();
+ const res = await ClipboardInstance.readTextByClipboard();
+```
