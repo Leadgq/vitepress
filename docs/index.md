@@ -20,5 +20,5 @@ features:
     linkText: 了解更多
 
   - title: 当前库版本
-    details: 0.1.8
+    details: 0.2.0
 ---
