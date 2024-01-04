@@ -145,3 +145,40 @@ uniqueArray(arr,key)
 */
 fuzzySearch(arr, keyWord, key)
 ```
+## 返回当前时间
+
+```js
+
+/**
+ * @description 方法是12小时制
+ * @description 返回当前时间
+ * @example getCurrentDateForChina() => 2021年1月1日星期五 下午4:00
+ * @example getCurrentDateForChina(false) => 2021年1月1日星期五 16:00
+ */
+getCurrentDateForChina(isTwelveHours)
+```
+
+## 拷贝
+
+```js
+/**
+ * @description 初始化一次 
+ * @description 内部会判断是否支持clipboard、不支持则使用document.execCommand
+ * @description 返回值为true表示拷贝成功
+ * @param { string } value 当前需要拷贝的内容
+ */
+ const ClipboardInstance = new Clipboard();
+ const res = await ClipboardInstance.copyTextByClipboard(value);
+```
+
+## 获取拷贝的内容
+
+```js
+/**
+ * @description 初始化一次 
+ * @description 内部会判断是否支持clipboard、不支持则使用document.execCommand
+ * @description 返回值为你拷贝的内容
+ */
+ const ClipboardInstance = new Clipboard();
+ const res = await ClipboardInstance.readTextByClipboard();
+```

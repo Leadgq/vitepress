@@ -19,6 +19,6 @@ features:
     link: https://github.com/Leadgq/tree-lib
     linkText: 了解更多
 
-  - title: 想说的话
-    details: 希望和你一起学习，一起进步，一起成长。  
+  - title: 当前库版本
+    details: 0.1.8
 ---
