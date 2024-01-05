@@ -182,3 +182,18 @@ getCurrentDateForChina(isTwelveHours)
  const ClipboardInstance = new Clipboard();
  const res = await ClipboardInstance.readTextByClipboard();
 ```
+
+## 函数重载(0.2.1发布)
+```js
+/**
+ * @description 函数重载 
+ * @example
+ *  const testFn = createOverload();
+ *  const strFn = (...args) => {console.log(args);}
+ *  testFn.addImpl('string', strFn)
+ *  testFn.addImpl('string', 'string', strFn)
+ *  testFn.addImpl('string', 'string', 'string',strFn)
+ *  testFn('1', '2','我是第三个参数')
+ */
+createOverload();
+```
