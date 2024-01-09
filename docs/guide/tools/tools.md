@@ -178,6 +178,7 @@ getCurrentDateForChina(isTwelveHours)
  * @description 初始化一次 
  * @description 内部会判断是否支持clipboard、不支持则使用document.execCommand
  * @description 返回值为你拷贝的内容
+ * @description 不支持clipboard的时候、不可跨页面获取拷贝内容
  */
  const ClipboardInstance = new Clipboard();
  const res = await ClipboardInstance.readTextByClipboard();
