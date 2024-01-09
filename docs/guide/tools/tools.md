@@ -198,3 +198,19 @@ getCurrentDateForChina(isTwelveHours)
  */
 createOverload();
 ```
+
+## 字符串比较 (0.2.1发布)
+```js
+/**
+ * 
+ * @param { string } s1 
+ * @param { string } s2
+ * @param { string } stringIdentifier 默认为'-'
+ * @returns { number } 1: s1 > s2, -1: s1 < s2, 0: s1 === s2
+ * @description 比较字符串大小
+ * @example compareStr('1-1-1', '1-1-2') => -1
+ * @example compareStr('1-1-1', '1-1-1') => 0
+ * @example compareStr('1-1-2', '1-1-1') => 1
+ */
+compareStr(s1, s2, stringIdentifier)
+```
