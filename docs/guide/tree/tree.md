@@ -149,6 +149,19 @@ findChildrenList(tree, key, value, (showDetail = true));
 findPath(tree, node, key, showDetail , isIncludeMyself = false);
 ```
 
+## 查找当前节点的兄弟节点
+
+```js
+/**
+ * @param { Array | Object }  treeData
+ * @param  { Object | string } node 值或者节点对象
+ * @param  { String  } key
+ * @param  { Boolean  } isShowDetail 默认true 返回当前节点的详细信息
+ * @description  返回当前节点的兄弟节点
+ */
+findCurrentNodeBrotherNode(treeData, node, key);
+```
+
 ## 是否是父节点
 
 ```js
@@ -174,17 +187,6 @@ isParentNode(node);
 isChildNode(treeData, node, key);
 ```
 
-## 重做树结构
-
-```js
-/**
- * @param { Array | Object }  tree
- * @param  { Function  } handlerTreeFn
- * @description  重做树结构
- */
-redoTreeData(treeData, handlerTreeFn);
-```
-
 ## 是否是叶子节点
 
 ```js
@@ -197,19 +199,34 @@ redoTreeData(treeData, handlerTreeFn);
 isLeafNode(treeData, node, key);
 ```
 
-## 查找当前节点的兄弟节点
+## 是否是根节点(0.2.1)
 
 ```js
 /**
  * @param { Array | Object }  treeData
- * @param  { Object | string } node 值或者节点对象
+ * @param  { Object | String  } node
  * @param  { String  } key
- * @param  { Boolean  } isShowDetail 默认true 返回当前节点的详细信息
- * @description  返回当前节点的兄弟节点
+ * @param { boolean } showDetail
+ * @description  返回当前节点是否是根节点
+ * @returns { Object } { isRoot: true, root: '1' }
+ * @example isRootNode(treeData, '1', 'id', false) ==> { isRoot: true, root: '1' }
+ * @example isRootNode(treeData, '1', 'id', true) ==> { isRoot: true, root: { id: '1' } }
+ * @example isRootNode(treeData, { id: '2' }, 'id' , false) ==> { isRoot: false, root: '1' }
+ * @example isRootNode(treeData, { id: '2' }, 'id' , true) ==> { isRoot: false, root: { id: '1' } }
  */
-findCurrentNodeBrotherNode(treeData, node, key);
+isRootNode(treeData, node, key, showDetail = false)
 ```
 
+## 重做树结构
+
+```js
+/**
+ * @param { Array | Object }  tree
+ * @param  { Function  } handlerTreeFn
+ * @description  重做树结构
+ */
+redoTreeData(treeData, handlerTreeFn);
+```
 
 ## 树的模糊搜索
 
