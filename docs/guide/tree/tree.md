@@ -194,7 +194,8 @@ isChildNode(treeData, node, key);
  * @param { Array | Object }  treeData
  * @param  { Object | String  } node
  * @param  { String  } key
- * @description  返回当前节点是否是叶子节点,外界如果提供isLeaf字段、则直接返回isLeaf字段
+ * @description  返回当前节点是否是叶子节点,外界如果提供isLeaf字段、使用外界isLeaf字段
+ * @description  若不提供isLeaf字段、函数内部自动处理
  */
 isLeafNode(treeData, node, key);
 ```
@@ -224,6 +225,7 @@ isRootNode(treeData, node, key, showDetail = false)
  * @param { Array | Object }  tree
  * @param  { Function  } handlerTreeFn
  * @description  重做树结构
+ * @description  内部使用递归、提供更加语义化处理方式
  */
 redoTreeData(treeData, handlerTreeFn);
 ```
