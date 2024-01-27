@@ -36,9 +36,10 @@ getSymmetricDifference(arr1, arr2,key)
 /**
  * @param {  Array } arr
  * @param { string } key
- * @returns { Map }
  * @description 将数组转换成map,并且以key为map的key
  * @description 该方法会缓存结果
+ * @example genderMapAndSetMapKey([{id:1,name:'test'},{id:2,name:'test2'}], 'id')
+ * @returns { Map } { key:"1", value:{ id: 1, name: 'test'} ,  key:"2" ,value: { id: 2, name: 'test2' } }
  */
 genderMapAndSetMapKey(arr, key)
 ```
@@ -51,11 +52,10 @@ genderMapAndSetMapKey(arr, key)
  * @description 解析url参数
  * @returns { Object }
  * @example parseLocationUrlParams() => {id:1,name:'test'}
- * @description web
+ * @description 和框架无关之和是否是web有关
  */
 parseLocationUrlParams()
 ```
-
 
 ## 返回千分位
 
@@ -63,6 +63,9 @@ parseLocationUrlParams()
 /**
  * @description 返回千分位
  * @returns { string }
+ * @example toThousands(1000) => "1,000"
+ * @example toThousands(1000000) => "1,000,000"
+ * @example toThousands(1000000000) => "1,000,000
  */
 toThousands(num)
 ```
@@ -73,6 +76,7 @@ toThousands(num)
 /**
  * @description 隐藏手机号中间四位
  * @returns { string }
+ * @example hidePhone('13812345678') => "138****5678"
  */
 hidePhone(phone)
 ```
@@ -199,7 +203,7 @@ getCurrentDateForChina(isTwelveHours)
 createOverload();
 ```
 
-## 字符串比较 (0.2.1发布)
+## 字符串比较 ==> 废弃（实用性较低）
 ```js
 /**
  * 
