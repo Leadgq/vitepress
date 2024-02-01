@@ -200,7 +200,7 @@ isChildNode(treeData, node, key);
 isLeafNode(treeData, node, key);
 ```
 
-## 是否是根节点(0.2.1)
+## 是否是根节点
 
 ```js
 /**

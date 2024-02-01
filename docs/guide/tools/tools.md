@@ -188,7 +188,7 @@ getCurrentDateForChina(isTwelveHours)
  const res = await ClipboardInstance.readTextByClipboard();
 ```
 
-## 函数重载(0.2.1发布)
+## 函数重载
 ```js
 /**
  * @description 函数重载 
@@ -201,20 +201,4 @@ getCurrentDateForChina(isTwelveHours)
  *  testFn('1', '2','我是第三个参数')
  */
 createOverload();
-```
-
-## 字符串比较 ==> 废弃（实用性较低）
-```js
-/**
- * 
- * @param { string } s1 
- * @param { string } s2
- * @param { string } stringIdentifier 默认为'-'
- * @returns { number } 1: s1 > s2, -1: s1 < s2, 0: s1 === s2
- * @description 比较字符串大小
- * @example compareStr('1-1-1', '1-1-2') => -1
- * @example compareStr('1-1-1', '1-1-1') => 0
- * @example compareStr('1-1-2', '1-1-1') => 1
- */
-compareStr(s1, s2, stringIdentifier)
 ```
