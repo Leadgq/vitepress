@@ -159,7 +159,7 @@ findPath(tree, node, key, showDetail , isIncludeMyself = false);
  * @param  { Boolean  } isShowDetail 默认true 返回当前节点的详细信息
  * @description  返回当前节点的兄弟节点
  */
-findCurrentNodeBrotherNode(treeData, node, key);
+findCurrentNodeBrotherNode(treeData, node, key, isShowDetail = true);
 ```
 
 ## 是否是父节点
