@@ -35,11 +35,11 @@ flattenTreeByDepth(treeData);
 flattenTreeByPostOrder(treeData);
 ```
 
-## 广度优先,获取每次遍历的节点
+## 广度优先,获取每次遍历的节点(0.2.2)
 
 ```js
 /**
- * @param { Array } treeData
+ * @param { Array | Object } treeData
  * @param  { Function } fn
  * @description 由于flattenTree返回的是一个数组,这不满足于对细微的操作,所以提供了这个方法
  *  const  list = [{id: 1, name: '1', children: [{ id:3 ,name:'3'}]},{ id:2,name:'2' }]
@@ -53,11 +53,11 @@ flattenTreeByPostOrder(treeData);
 breadthFirstSearch(treeData,fn)
 ```
 
-## 后序深度优先,获取每次遍历的节点
+## 后序深度优先,获取每次遍历的节点(0.2.2)
 
 ```js
 /**
- * @param { Array } treeData
+ * @param { Array | Object } treeData
  * @param  { Function } fn
  * @description 得到每次遍历的节点、后序遍历
  * @example postOrderFirstSearch(treeData, (node) => {console.log(node)})
