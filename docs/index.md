@@ -9,16 +9,15 @@ hero:
       text: View on GitHub
       link: https://github.com/Leadgq/tree-lib
 features:
-  - title: 为什么选择vitePress
-    details: 简单的配置，快速的构建，方便的部署，支持md和vue文件，支持vue3
-    link: https://vitepress.dev/
-    linkText: 了解更多
+  - title: 前言
+    details: 本库只提供了树的搜索方法,作者认为获取了树的节点对象,那么增删改的操作都是非常简单的,类似如果你需要插入一个节点到某个节点下面,你只需要找到这个节点,然后push进去就可以了,但是如何查找是费事的
 
   - title: 创建tree-esm-lib的目的
     details: 为了方便开发者快速的使用树形结构数据搜索库，提供了一些常用的工具函数,同时方便自己查看
     link: https://github.com/Leadgq/tree-lib
     linkText: 了解更多
 
-  - title: 当前库版本
+  - title: 当前库版本 
     details: 0.2.1
 ---
+
