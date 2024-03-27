@@ -123,17 +123,19 @@ after(fn, count)
 initBroadcastChannel(messageInfo)
 ```
 
-## 数组去重
+## 数组去重(0.2.2更新)
 
 ```js
 /**
+ * @description 新支持第二参数为函数
  * @description 数组去重
  * @description 去除对象数组中的重复项
- * @description 如果不传入key，则认为是基本类型数组
  * @returns { Array }
  * @param { Array } arr
- * @param { string } key
-*/
+ * @param { string | Function } 
+ * @example uniqueArray([],'id')
+ * @example uniqueArray([],(a,b) => a.id !== b.id) 
+ */
 uniqueArray(arr,key)
 ```
 
