@@ -205,7 +205,7 @@ getCurrentDateForChina(isTwelveHours)
 createOverload();
 ```
 
-## 函数重载
+## 生成随机数
 ```js
 /**
  *  @description 生成随机数
