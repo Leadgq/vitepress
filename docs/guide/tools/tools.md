@@ -204,3 +204,26 @@ getCurrentDateForChina(isTwelveHours)
  */
 createOverload();
 ```
+
+## 生成随机数
+```js
+/**
+ *  @description 生成随机数
+ *  @param { number } min
+ *  @param { number } max
+ *  @returns { number }
+ */
+genderRandom(min, max);
+```
+
+## 重构对象
+
+```js
+/**
+ *  @param { Object } obj
+ *  @param { Function } fn
+ *  @returns { Object }
+ * @example objectMap({},(k,v)=>{ return  [k,v*2]  })
+ */
+objectMap(obj, fn);
+```
