@@ -35,7 +35,7 @@ flattenTreeByDepth(treeData);
 flattenTreeByPostOrder(treeData);
 ```
 
-## 广度优先,获取每次遍历的节点(0.2.2)
+## 广度优先,获取每次遍历的节点
 
 ```js
 /**
@@ -53,7 +53,7 @@ flattenTreeByPostOrder(treeData);
 breadthFirstSearch(treeData,fn)
 ```
 
-## 后序深度优先,获取每次遍历的节点(0.2.2)
+## 后序深度优先,获取每次遍历的节点
 
 ```js
 /**
