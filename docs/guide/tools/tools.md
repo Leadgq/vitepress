@@ -123,7 +123,7 @@ after(fn, count)
 initBroadcastChannel(messageInfo)
 ```
 
-## 数组去重(0.2.2更新)
+## 数组去重
 
 ```js
 /**
@@ -205,7 +205,7 @@ getCurrentDateForChina(isTwelveHours)
 createOverload();
 ```
 
-## 生成随机数
+## 生成随机数 0.2.4
 ```js
 /**
  *  @description 生成随机数
@@ -216,9 +216,9 @@ createOverload();
 genderRandom(min, max);
 ```
 
-## 重构对象
+## 重构对象 0.2.4
 
-```js
+```js 
 /**
  *  @param { Object } obj
  *  @param { Function } fn
