@@ -136,7 +136,7 @@ initBroadcastChannel(messageInfo)
  * @example uniqueArray([],'id')
  * @example uniqueArray([],(a,b) => a.id !== b.id) 
  */
-uniqueArray(arr,key)
+uniqueArray(arr, key | function )
 ```
 
 ## 模糊搜索对象数组
@@ -205,7 +205,7 @@ getCurrentDateForChina(isTwelveHours)
 createOverload();
 ```
 
-## 生成随机数 0.2.4
+## 生成随机数 
 ```js
 /**
  *  @description 生成随机数
@@ -216,7 +216,7 @@ createOverload();
 genderRandom(min, max);
 ```
 
-## 重构对象 0.2.4
+## 重构对象 
 
 ```js 
 /**
@@ -226,4 +226,33 @@ genderRandom(min, max);
  * @example objectMap({},(k,v)=>{ return  [k,v*2]  })
  */
 objectMap(obj, fn);
+```
+
+## 挑选对象 0.2.5
+
+```js
+/**
+ *  @description 挑选对象
+ *  @param { Object } obj
+ *  @param { String | function } props
+ *  @returns { Object }
+ *  @example pickObject({a:1,b:2,3:3},['a','b']) ==> {a:1,b:2}
+ *  @example pickObject({a:1,b:2,3:3},(k,v) => k !== '3') ==> {a:1,b:2}
+ */
+pickObject(obj, ['a','b'] | function )
+```
+
+
+## 排除对象 0.2.5
+
+```js
+/**
+ *  @description 排除对象
+ *  @param { Object } obj
+ *  @param { String | function } props
+ *  @returns { Object }
+ *  @example omitObject({a:1,b:2,3:3},['a']) ==> {b:2}
+ *  @example omitObject({a:1,b:2,3:3},(k,v) => k !== '3') ==> {a:1,b:2}
+ */
+omitObject(obj, ['a','b'] | function )
 ```
