@@ -256,3 +256,19 @@ pickObject(obj, ['a','b'] | function )
  */
 omitObject(obj, ['a','b'] | function )
 ```
+
+## 深度比较数据 0.2.6
+
+```js
+/**
+ *  @description 深度比较对象
+ *  @param { Object } obj1
+ *  @param { Object } obj2
+ *  @returns { Boolean }
+ *  @example isDeepEqual({a:1,b:2},{a:1,b:2}) ==> true
+ *  @example isDeepEqual({a:1,b:2},{a:1,b:3}) ==> false
+ *  @example isDeepEqual([1,2],[1,2]) ==> true
+ *  @example isDeepEqual('1','2') ==> false
+ **/
+isDeepEqual(value1,value2)
+```
