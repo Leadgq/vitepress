@@ -261,9 +261,9 @@ omitObject(obj, ['a','b'] | function )
 
 ```js
 /**
- *  @description 深度比较对象
- *  @param { Object } obj1
- *  @param { Object } obj2
+ *  @description 深度比较数据
+ *  @param { any } value1
+ *  @param { any } value2
  *  @returns { Boolean }
  *  @example isDeepEqual({a:1,b:2},{a:1,b:2}) ==> true
  *  @example isDeepEqual({a:1,b:2},{a:1,b:3}) ==> false
