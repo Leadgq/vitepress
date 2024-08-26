@@ -272,3 +272,32 @@ omitObject(obj, ['a','b'] | function )
  **/
 isDeepEqual(value1,value2)
 ```
+
+
+## 深度克隆 0.2.7
+
+```js
+/**
+ *  @description clone Data
+ *  @param { Object } value
+ *  @returns { Object }
+ *  @example deepClone({a:1,b:2}) ==> {a:1,b:2}
+ *  @example deepClone([1,2,3]) ==> [1,2,3]
+ **/
+deepClone(value)
+```
+
+
+## 抽取视频帧 0.2.7
+
+```js
+/**
+ * @description 获取文件中的某一帧、或间隔获取多帧
+ *  @param { File } file
+ *  @param { Number } time 每一帧的时间间隔(单位:秒)
+ *  @param { Boolean } isUseInterval 是否使用间隔 为false只会获取这一帧
+ *  @returns { Map }
+ *  @example await captureFrame({ file, 20  }) ==> Map { blob => {url:blobUrl,time:20},blob => {url:blobUrl,time:40} }
+ */
+captureFrame(file, time = 0, isUseInterval = true)
+```
