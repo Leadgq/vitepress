@@ -301,3 +301,25 @@ deepClone(value)
  */
 captureFrame(file, time = 0, isUseInterval = true)
 ```
+
+## 合并url和参数 0.2.8
+
+```js
+/**
+ * @description 合并url和参数
+ * @param url {String}
+ * @param params {Object}
+ */
+jointUrl(url, params)
+```
+
+## 获取最后一次请求值 0.2.8
+
+```js
+/**
+ * @description 确保只返回最后一次请求的结果，忽略之前的请求结果
+ * @param {Function} fn 异步请求函数
+ * @returns {Function} 包装后的函数
+ */
+onlyLastHttpValue(fn);
+```
